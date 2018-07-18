@@ -2,7 +2,12 @@
 // @name        WME Language Forcer
 // @namespace   https://www.bowlman.org
 // @description Script to redirect to your language automaticaly
-// @include     /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor([^\/].*)?$/
+// @match          https://editor-beta.waze.com/*editor*
+// @match          https://beta.waze.com/*editor*
+// @match          https://www.waze.com/*editor*
+// @match          https://editor-beta.waze.com/*editor/*
+// @match          https://beta.waze.com/*editor/*
+// @match          https://www.waze.com/*editor/*
 // @version     0.1
 // @author         tunisiano187 '2018 based on Rick Zabel '2014
 // @license        MIT/BSD/X11
