@@ -1,25 +1,25 @@
 // ==UserScript==
-// @name        WME Language Forcer
-// @namespace   https://www.bowlman.org
-// @description Script to redirect to your language automaticaly
+// @name           WME Language Forcer
+// @namespace      https://www.bowlman.org
+// @description    Script to redirect to your language automaticaly
 // @match          https://editor-beta.waze.com/*editor*
 // @match          https://beta.waze.com/*editor*
 // @match          https://www.waze.com/*editor*
 // @match          https://editor-beta.waze.com/*editor/*
 // @match          https://beta.waze.com/*editor/*
-// @match          https://www.waze.com/*editor/*
-// @version     0.1
+// @match          https://www.waze.com/*/editor/*
+// @version        1.0
 // @author         tunisiano187 '2018
 // @license        MIT/BSD/X11
-// @updateURL      https://gitlab.com/WMEScripts/WME-language-forcer/raw/master/wme-language-forcer.user.js
 // @compatible     chrome firefox
 // @supportURL      mailto:incoming+WMEScripts/WME-language-forcer@incoming.gitlab.com
 // @contributionURL https://flattr.com/@tunisiano
-// @grant       none
+// @grant          none
 // ==/UserScript==
 
-if (window.location.pathname.indexOf('/fr/editor/') == -1 && window.location != window.location.href.replace('/editor/', '/fr/editor/')) {
+if (window.location.pathname.indexOf('/fr/editor/') == -1) {
   setTimeout(function() {
-    window.location = window.location.href.replace('/editor/', '/fr/editor/');
+      var fullpath = window.location.pathname+window.location.search;
+    window.location.replace = window.location.replace('https://www.waze.com/fr' + fullpath);
   }, 1000);
 }
