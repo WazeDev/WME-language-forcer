@@ -9,7 +9,7 @@
 // @match          https://beta.waze.com/*editor/*
 // @match          https://www.waze.com/*editor/*
 // @version     0.1
-// @author         tunisiano187 '2018 based on Rick Zabel '2014
+// @author         tunisiano187 '2018
 // @license        MIT/BSD/X11
 // @updateURL      https://gitlab.com/WMEScripts/WME-language-forcer/raw/master/wme-language-forcer.user.js
 // @compatible     chrome firefox
