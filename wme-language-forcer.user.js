@@ -8,7 +8,7 @@
 // @match          https://editor-beta.waze.com/*editor/*
 // @match          https://beta.waze.com/*editor/*
 // @match          https://www.waze.com/*/editor/*
-// @version        1.1
+// @version        1.2
 // @author         tunisiano187 '2018
 // @license        MIT/BSD/X11
 // @compatible     chrome firefox
@@ -17,7 +17,7 @@
 // @grant          none
 // ==/UserScript==
 
-if (location.pathname.indexOf("/fr/editor") != 0) {
+if (location.pathname.indexOf("/fr/editor") != 0 && location.pathname.indexOf("/user/editor") == -1) {
   setTimeout(function() {
       var fullpath = window.location.pathname+window.location.search;
       while(fullpath.substring(1,7) != "editor")
