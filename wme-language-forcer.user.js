@@ -8,7 +8,7 @@
 // @match          https://editor-beta.waze.com/*editor/*
 // @match          https://beta.waze.com/*editor/*
 // @match          https://www.waze.com/*/editor/*
-// @version        1.1
+// @version        1.3
 // @author         tunisiano187 '2018
 // @license        MIT/BSD/X11
 // @compatible     chrome firefox
