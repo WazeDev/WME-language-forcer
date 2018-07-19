@@ -17,7 +17,7 @@
 // @grant          none
 // ==/UserScript==
 
-if (window.location.pathname.indexOf('/fr/editor/') == -1) {
+if (location.pathname.indexOf("/fr/editor") != 0) {
   setTimeout(function() {
       var fullpath = window.location.pathname+window.location.search;
       while(fullpath.substring(1,7) != "editor")
