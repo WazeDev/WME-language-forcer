@@ -8,7 +8,7 @@
 // @match          https://editor-beta.waze.com/*editor/*
 // @match          https://beta.waze.com/*editor/*
 // @match          https://www.waze.com/*/editor/*
-// @version        1.2
+// @version        1.1
 // @author         tunisiano187 '2018
 // @license        MIT/BSD/X11
 // @compatible     chrome firefox
@@ -16,14 +16,24 @@
 // @contributionURL https://flattr.com/@tunisiano
 // @grant          none
 // ==/UserScript==
+var language = "";
+if('WME-prefered-language' in localStorage) {
+    language = localStorage.getItem('WME-prefered-language');
+  }
+else
+{
+    language=prompt("Wich language do you want to use ? (ex:fr, de, ..)", "fr");
+    language=language.toLowerCase();
+    localStorage.setItem('WME-prefered-language',language);
+}
 
-if (location.pathname.indexOf("/fr/editor") != 0 && location.pathname.indexOf("/user/editor") == -1) {
+if (location.pathname.indexOf("/" + language + "/editor") !== 0 && location.pathname.indexOf("/user/editor") == -1) {
   setTimeout(function() {
       var fullpath = window.location.pathname+window.location.search;
       while(fullpath.substring(1,7) != "editor")
       {
           fullpath = fullpath.substring(1);
       }
-    window.location.replace = window.location.replace('https://www.waze.com/fr' + fullpath);
+    window.location.replace = window.location.replace('https://www.waze.com/' + language + fullpath);
   }, 1000);
 }
