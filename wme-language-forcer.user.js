@@ -8,7 +8,7 @@
 // @match          https://editor-beta.waze.com/*editor/*
 // @match          https://beta.waze.com/*editor/*
 // @match          https://www.waze.com/*/editor/*
-// @version        1.3
+// @version        1.4
 // @author         tunisiano187 '2018
 // @license        MIT/BSD/X11
 // @compatible     chrome firefox
@@ -22,7 +22,7 @@ if('WME-prefered-language' in localStorage) {
   }
 else
 {
-    language=prompt("Wich language do you want to use ? (ex:fr, de, ..)", "fr");
+    language=prompt("Wich language do you want to use ? (ex:fr, de, ..)", I18n.locale);
     language=language.toLowerCase();
     localStorage.setItem('WME-prefered-language',language);
 }
