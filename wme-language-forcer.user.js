@@ -20,6 +20,10 @@
 if (window.location.pathname.indexOf('/fr/editor/') == -1) {
   setTimeout(function() {
       var fullpath = window.location.pathname+window.location.search;
+      while(fullpath.substring(1,6) != "editor")
+      {
+          fullpath = fullpath.substring(1);
+      }
     window.location.replace = window.location.replace('https://www.waze.com/fr' + fullpath);
   }, 1000);
 }
