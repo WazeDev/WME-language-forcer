@@ -30,3 +30,9 @@ If you find any issue
 - or send an email at <a href="mailto:incoming+WMEScripts/WME-language-forcer@incoming.gitlab.com">incoming+WMEScripts/WME-language-forcer@incoming.gitlab.com</a>
 - or send me a DM on Slack Benelux (@tunisiano187)
 - or send me a DM on Discord (@tunisiano187)
+
+
+Donation
+--------
+Feel free to donate
+[![ko-fi](https://www.ko-fi.com/img/donate_sm.png)](https://ko-fi.com/W7W4GSD8)
