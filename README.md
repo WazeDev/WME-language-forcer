@@ -27,6 +27,6 @@ Still todo
 If you find any issue
 ---------------------
 - press the report a bug on Tampermonkey/Greasemonkey (Prefered with follow)
-- or send an email at <a href="mailto:incoming+WMEScripts/WME-language-forcer+yiaUcT4uYQSNWoqQN1rf@incoming.gitlab.com">incoming+WMEScripts/WME-language-forcer+yiaUcT4uYQSNWoqQN1rf@incoming.gitlab.com</a>
+- or send an email at <a href="mailto:incoming+WMEScripts/WME-language-forcer@incoming.gitlab.com">incoming+WMEScripts/WME-language-forcer@incoming.gitlab.com</a>
 - or send me a DM on Slack Benelux (@tunisiano187)
 - or send me a DM on Discord (@tunisiano187)
