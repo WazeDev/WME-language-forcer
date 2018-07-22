@@ -13,7 +13,7 @@
 // @license        MIT/BSD/X11
 // @compatible     chrome firefox
 // @supportURL      mailto:incoming+WMEScripts/WME-language-forcer@incoming.gitlab.com
-// @contributionURL https://flattr.com/@tunisiano
+// @contributionURL http://ko-fi.com/tunisiano
 // @grant          none
 // ==/UserScript==
 var language = "";
