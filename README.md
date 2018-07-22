@@ -8,7 +8,7 @@ after the installation, at the first connection to the WME, you'll be prompted f
 
 the selection is the same as needed by the WME, ex: fr for french, nl for nederlands, de for deutch...
 
-Don't hesitete to contact me if you've any questions
+Don't hesitate to contact me if you've any questions
 
 Installation
 ------------
