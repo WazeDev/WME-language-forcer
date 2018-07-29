@@ -8,7 +8,7 @@
 // @match          https://editor-beta.waze.com/*editor/*
 // @match          https://beta.waze.com/*editor/*
 // @match          https://www.waze.com/*/editor/*
-// @version        1.4
+// @version        1.5
 // @author         tunisiano187 '2018
 // @license        MIT/BSD/X11
 // @compatible     chrome firefox
@@ -16,6 +16,11 @@
 // @contributionURL http://ko-fi.com/tunisiano
 // @grant          none
 // ==/UserScript==
+if(window.location.hash == ("#reset-WME-prefered-language")) {
+    localStorage.removeItem('WME-prefered-language');
+    alert("Language resetted");
+    window.location.href = "https://www.waze.com/editor/";
+}
 var language = "";
 if('WME-prefered-language' in localStorage) {
     language = localStorage.getItem('WME-prefered-language');

@@ -19,6 +19,10 @@ Then use the following links to install.
 
 <a href="https://greasyfork.org/fr/scripts/370408-wme-language-forcer">Production script</a>
 
+To change the language
+----------------------
+go to this url : <a>https://www.waze.com/editor/#reset-WME-prefered-language</a>
+
 Still todo
 ----------
 
