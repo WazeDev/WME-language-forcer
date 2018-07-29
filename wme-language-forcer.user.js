@@ -16,6 +16,10 @@
 // @contributionURL http://ko-fi.com/tunisiano
 // @grant          none
 // ==/UserScript==
+if(window.location.search.indexOf("reset-WME-prefered-language") > -1) {
+    localStorage.removeItem('WME-prefered-language');
+    alert("Language resetted")
+}
 var language = "";
 if('WME-prefered-language' in localStorage) {
     language = localStorage.getItem('WME-prefered-language');
