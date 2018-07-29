@@ -19,6 +19,7 @@
 if(window.location.search.indexOf("reset-WME-prefered-language") > -1) {
     localStorage.removeItem('WME-prefered-language');
     alert("Language resetted")
+    window.location.href = "https://www.waze.com/editor/";
 }
 var language = "";
 if('WME-prefered-language' in localStorage) {
