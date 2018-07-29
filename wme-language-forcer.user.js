@@ -25,7 +25,7 @@ if(window.location.hash == ("#reset-WME-prefered-language")) {
 }
 else if($(".not-found")[0]) {
     if ('WME-prefered-language-last-refresh' in localStorage){
-        prevts = localStorage.getItem('WME-prefered-language-last-refresh');
+        var prevts = localStorage.getItem('WME-prefered-language-last-refresh');
         if(Math.round(ts-5)>prevts) {
             window.location.href = "https://www.waze.com/editor/#reset-WME-prefered-language";
         }
