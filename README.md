@@ -21,17 +21,18 @@ Then use the following links to install.
 
 To reset the language
 ----------------------
-go to this url : <a>https://www.waze.com/editor/#reset-WME-prefered-language</a>
+go to this url : <a href="https://www.waze.com/editor/#reset-WME-prefered-language">https://www.waze.com/editor/#reset-WME-prefered-language</a>
 
 
 Still todo
 ----------
 
-- Check here the todo/issues list : <a targer="_blank">https://gitlab.com/WMEScripts/WME-language-forcer/issues</a>
+- Check here the todo/issues list : <a targer="_blank" href="https://gitlab.com/WMEScripts/WME-language-forcer/issues">https://gitlab.com/WMEScripts/WME-language-forcer/issues</a>
 
 If you find any issue
 ---------------------
 - press the report a bug on Tampermonkey/Greasemonkey (Prefered with follow)
+- or submit it here : <a targer="_blank" href="https://gitlab.com/WMEScripts/WME-language-forcer/issues">https://gitlab.com/WMEScripts/WME-language-forcer/issues</a>
 - or send an email at <a href="mailto:incoming+WMEScripts/WME-language-forcer@incoming.gitlab.com">incoming+WMEScripts/WME-language-forcer@incoming.gitlab.com</a>
 - or send me a DM on Slack Benelux (@tunisiano187)
 - or send me a DM on Discord (@tunisiano187)
