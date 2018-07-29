@@ -16,9 +16,9 @@
 // @contributionURL http://ko-fi.com/tunisiano
 // @grant          none
 // ==/UserScript==
-if(window.location.search.indexOf("reset-WME-prefered-language") > -1) {
+if(window.location.hash == ("#reset-WME-prefered-language")) {
     localStorage.removeItem('WME-prefered-language');
-    alert("Language resetted")
+    alert("Language resetted");
     window.location.href = "https://www.waze.com/editor/";
 }
 var language = "";
