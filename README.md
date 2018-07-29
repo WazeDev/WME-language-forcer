@@ -26,7 +26,7 @@ go to this url : <a>https://www.waze.com/editor/#reset-WME-prefered-language</a>
 Still todo
 ----------
 
-- Cath when the WME send to the 404 page and if it's a problem with the script, reask the editor to choose a language.
+- Catch when the WME send to the 404 page and if it's a problem with the script, reask the editor to choose a language.
 
 If you find any issue
 ---------------------
