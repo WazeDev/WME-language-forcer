@@ -21,6 +21,8 @@ Then use the following links to install.
 
 To reset the language
 ----------------------
+
+Click on the language next to your username or 
 go to this url : <a href="https://www.waze.com/editor/#reset-WME-prefered-language">https://www.waze.com/editor/#reset-WME-prefered-language</a>
 
 
