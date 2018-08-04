@@ -1,5 +1,6 @@
 // ==UserScript==
 // @name           WME Language Forcer
+// @name:fr        WME Language Forcer
 // @namespace      https://www.bowlman.org
 // @description    Script to redirect to your language automaticaly
 // @match          https://editor-beta.waze.com/*editor*
