@@ -42,3 +42,7 @@ Donation
 --------
 Feel free to donate
 [![ko-fi](https://www.ko-fi.com/img/donate_sm.png)](https://ko-fi.com/W7W4GSD8)
+
+Changelog
+---------
+* 2018.08.04.01 - Adding a link to ease the change of default language

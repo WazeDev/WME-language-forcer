@@ -8,7 +8,7 @@
 // @match          https://editor-beta.waze.com/*editor/*
 // @match          https://beta.waze.com/*editor/*
 // @match          https://www.waze.com/*/editor/*
-// @version        1.6
+// @version        2018.08.04.01
 // @author         tunisiano187 '2018
 // @license        MIT/BSD/X11
 // @compatible     chrome firefox
@@ -40,7 +40,9 @@ else
     language=language.toLowerCase();
     localStorage.setItem('WME-prefered-language',language);
 }
-
+$(window).load(function() {
+    $('<a href="https://www.waze.com/editor/#reset-WME-prefered-language">(' + language.toUpperCase() + ')</a>').insertAfter(".profile-link");
+});
 if (location.pathname.indexOf("/" + language + "/editor") !== 0 && location.pathname.indexOf("/user/editor") == -1) {
   setTimeout(function() {
       var fullpath = window.location.pathname+window.location.search;
