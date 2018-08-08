@@ -37,8 +37,6 @@ Si vous souhaitez me contacter
 - Cliquez sur le Cafard/Bug dans l'extension Tampermonkey/Greasemonkey (Préféré)
 - introduisez une demande ici : <a targer="_blank" href="https://gitlab.com/WMEScripts/WME-language-forcer/issues">https://gitlab.com/WMEScripts/WME-language-forcer/issues</a>
 - envoyez un mail à <a href="mailto:incoming+WMEScripts/WME-language-forcer@incoming.gitlab.com">incoming+WMEScripts/WME-language-forcer@incoming.gitlab.com</a> (ne fonctionne pas avec toutes les messageries)
-- envoyez moi un message sur le slack de la communauté Waze du Benelux (@tunisiano187)
-- ou envoyez moi un message sur Discord (@tunisiano187)
 
 
 Dons
