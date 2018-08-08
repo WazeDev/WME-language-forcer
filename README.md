@@ -36,8 +36,6 @@ If you find any issue
 - press the report a bug on Tampermonkey/Greasemonkey (Prefered with follow)
 - or submit it here : <a targer="_blank" href="https://gitlab.com/WMEScripts/WME-language-forcer/issues">https://gitlab.com/WMEScripts/WME-language-forcer/issues</a>
 - or send an email at <a href="mailto:incoming+WMEScripts/WME-language-forcer@incoming.gitlab.com">incoming+WMEScripts/WME-language-forcer@incoming.gitlab.com</a>
-- or send me a DM on Slack Benelux (@tunisiano187)
-- or send me a DM on Discord (@tunisiano187)
 
 
 Donation
