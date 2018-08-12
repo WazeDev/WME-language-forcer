@@ -9,7 +9,7 @@
 // @match          https://editor-beta.waze.com/*editor/*
 // @match          https://beta.waze.com/*editor/*
 // @match          https://www.waze.com/*/editor/*
-// @version        2018.08.04.01
+// @version        2018.08.12.01
 // @author         tunisiano187 '2018
 // @license        MIT/BSD/X11
 // @compatible     chrome firefox
@@ -17,6 +17,24 @@
 // @contributionURL http://ko-fi.com/tunisiano
 // @grant          none
 // ==/UserScript==
+
+    ///////////////////////////////////////
+    //  Verification de la mise à jour   //
+    ///////////////////////////////////////
+    var WMElanguageforcerUpdateNotes = "Nouvelle version de WMElanguageforcer : " + WMElanguageforcerVersion;
+    if (localStorage.getItem('WMElanguageforcerVersion') === WMElanguageforcerVersion && 'WMElanguageforcerVersion' in localStorage) {
+
+    } else if ('WMElanguageforcerVersion' in localStorage) {
+        alert(WMElanguageforcerUpdateNotes);
+        localStorage.setItem('WMElanguageforcerVersion', WMElanguageforcerVersion);
+    } else {
+        localStorage.setItem('WMElanguageforcerVersion', WMElanguageforcerVersion);
+    }
+
+    ///////////////////////////////////////
+    //  Début du script                  //
+    ///////////////////////////////////////
+    
 var language = "";
 var ts = Math.round((new Date()).getTime() / 1000);
 if(window.location.hash == ("#reset-WME-prefered-language")) {
