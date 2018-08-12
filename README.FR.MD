@@ -47,3 +47,4 @@ N'hésitez pas à m'offrir un café :
 Changelog
 ---------
 * 2018.08.04.01 - Ajout d'un lien à la droite du nom d'utilisateur
+* 2018.08.12.01 - Ajout du suivis de version
