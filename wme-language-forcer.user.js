@@ -3,13 +3,14 @@
 // @name:fr        WME Language Forcer
 // @namespace      https://gitlab.com/WMEScripts
 // @description    Script to redirect to your language automaticaly
+// @description:fr  Ce script vous redirige vers votre langue définie automatiquement
 // @match          https://editor-beta.waze.com/*editor*
 // @match          https://beta.waze.com/*editor*
 // @match          https://www.waze.com/*editor*
 // @match          https://editor-beta.waze.com/*editor/*
 // @match          https://beta.waze.com/*editor/*
 // @match          https://www.waze.com/*/editor/*
-// @version        2018.08.12.01
+// @version        2018.08.12.02
 // @author         tunisiano187 '2018
 // @license        MIT/BSD/X11
 // @compatible     chrome firefox
