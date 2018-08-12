@@ -47,3 +47,4 @@ Changelog
 ---------
 * 2018.08.04.01 - Adding a link to ease the change of default language
 * 2018.08.12.01 - Adding version tracker and alert if new version
+* 2018.08.12.02 - French Description for Greasyfork
