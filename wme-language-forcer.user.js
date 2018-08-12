@@ -10,7 +10,7 @@
 // @match          https://editor-beta.waze.com/*editor/*
 // @match          https://beta.waze.com/*editor/*
 // @match          https://www.waze.com/*/editor/*
-// @version        2018.08.12.02
+// @version        2018.08.12.03
 // @author         tunisiano187 '2018
 // @license        MIT/BSD/X11
 // @compatible     chrome firefox
@@ -22,6 +22,7 @@
     ///////////////////////////////////////
     //  Verification de la mise à jour   //
     ///////////////////////////////////////
+    var WMElanguageforcerVersion = GM_info.script.version;
     var WMElanguageforcerUpdateNotes = "Nouvelle version de WMElanguageforcer : " + WMElanguageforcerVersion;
     if (localStorage.getItem('WMElanguageforcerVersion') === WMElanguageforcerVersion && 'WMElanguageforcerVersion' in localStorage) {
 
