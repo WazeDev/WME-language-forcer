@@ -10,7 +10,7 @@
 // @match          https://editor-beta.waze.com/*editor/*
 // @match          https://beta.waze.com/*editor/*
 // @match          https://www.waze.com/*/editor/*
-// @version        2018.08.24.01
+// @version        2018.09.06.01
 // @author         tunisiano187 '2018
 // @license        MIT/BSD/X11
 // @compatible     chrome firefox
@@ -23,7 +23,7 @@
     //  Verification de la mise à jour   //
     ///////////////////////////////////////
     var WMElanguageforcerVersion = GM_info.script.version;
-    var WMElanguageforcerUpdateNotes = "Nouvelle version de WMElanguageforcer v" + WMElanguageforcerVersion + " : Correction to language not showing";
+    var WMElanguageforcerUpdateNotes = "Nouvelle version de WMElanguageforcer v" + WMElanguageforcerVersion + " : New condition to avoid loop when not connected";
     if (localStorage.getItem('WMElanguageforcerVersion') === WMElanguageforcerVersion && 'WMElanguageforcerVersion' in localStorage) {
 
     } else if ('WMElanguageforcerVersion' in localStorage) {
@@ -36,7 +36,7 @@
     ///////////////////////////////////////
     //  Début du script                  //
     ///////////////////////////////////////
-    
+
 var language = "";
 var ts = Math.round((new Date()).getTime() / 1000);
 if(window.location.hash == ("#reset-WME-prefered-language")) {
@@ -73,6 +73,9 @@ if (location.pathname.indexOf("/" + language + "/editor") !== 0 && location.path
           fullpath = fullpath.substring(1);
       }
       localStorage.setItem('WME-prefered-language-last-refresh',ts);
-    window.location.replace = window.location.replace('https://www.waze.com/' + language + fullpath);
+      if(!$(".recaptcha-container")[0])
+      {
+          window.location.replace = window.location.replace('https://www.waze.com/' + language + fullpath);
+      }
   }, 1000);
 }
