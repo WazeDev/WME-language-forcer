@@ -10,7 +10,7 @@
 // @match          https://editor-beta.waze.com/*editor/*
 // @match          https://beta.waze.com/*editor/*
 // @match          https://www.waze.com/*/editor/*
-// @version        2018.09.06.01
+// @version        2018.09.14.01
 // @author         tunisiano187 '2018
 // @license        MIT/BSD/X11
 // @compatible     chrome firefox
@@ -23,7 +23,7 @@
     //  Verification de la mise à jour   //
     ///////////////////////////////////////
     var WMElanguageforcerVersion = GM_info.script.version;
-    var WMElanguageforcerUpdateNotes = "Nouvelle version de WMElanguageforcer v" + WMElanguageforcerVersion + " : New condition to avoid loop when not connected";
+    var WMElanguageforcerUpdateNotes = "Nouvelle version de WMElanguageforcer v" + WMElanguageforcerVersion + " : New condition to avoid loop when using beta";
     if (localStorage.getItem('WMElanguageforcerVersion') === WMElanguageforcerVersion && 'WMElanguageforcerVersion' in localStorage) {
 
     } else if ('WMElanguageforcerVersion' in localStorage) {
@@ -65,7 +65,7 @@ function showLang() {
     $('<a href="https://www.waze.com/editor/#reset-WME-prefered-language">(' + language.toUpperCase() + ')</a>').insertAfter(".profile-link");
 };
 setTimeout(showLang, 5000);
-if (location.pathname.indexOf("/" + language + "/editor") !== 0 && location.pathname.indexOf("/user/editor") == -1) {
+if (location.pathname.indexOf("/" + language + "/editor") !== 0 && location.pathname.indexOf("/user/editor") == -1 && location.pathname.indexOf("beta") === 0) {
   setTimeout(function() {
       var fullpath = window.location.pathname+window.location.search;
       while(fullpath.substring(1,7) != "editor")
