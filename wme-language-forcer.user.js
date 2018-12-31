@@ -10,8 +10,8 @@
 // @match          https://editor-beta.waze.com/*editor/*
 // @match          https://beta.waze.com/*editor/*
 // @match          https://www.waze.com/*/editor/*
-// @version        2018.09.14.01
-// @author         tunisiano187 '2018
+// @version        2018.12.31.01
+// @author         tunisiano18 '2018
 // @license        MIT/BSD/X11
 // @compatible     chrome firefox
 // @supportURL      mailto:incoming+WMEScripts/WME-language-forcer@incoming.gitlab.com
