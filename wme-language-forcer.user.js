@@ -10,8 +10,8 @@
 // @match          https://editor-beta.waze.com/*editor/*
 // @match          https://beta.waze.com/*editor/*
 // @match          https://www.waze.com/*/editor/*
-// @version        2018.12.31.01
-// @author         tunisiano18 '2018
+// @version        2019.08.15.01
+// @author         tunisiano187 '2018
 // @license        MIT/BSD/X11
 // @compatible     chrome firefox
 // @supportURL      mailto:incoming+WMEScripts/WME-language-forcer@incoming.gitlab.com
@@ -23,7 +23,7 @@
     //  Verification de la mise à jour   //
     ///////////////////////////////////////
     var WMElanguageforcerVersion = GM_info.script.version;
-    var WMElanguageforcerUpdateNotes = "Nouvelle version de WMElanguageforcer v" + WMElanguageforcerVersion + " : New condition to avoid loop when using beta";
+    var WMElanguageforcerUpdateNotes = "Nouvelle version de WMElanguageforcer v" + WMElanguageforcerVersion + " : Adaptation to the new WME design";
     if (localStorage.getItem('WMElanguageforcerVersion') === WMElanguageforcerVersion && 'WMElanguageforcerVersion' in localStorage) {
 
     } else if ('WMElanguageforcerVersion' in localStorage) {
@@ -62,20 +62,24 @@ else
     localStorage.setItem('WME-prefered-language',language);
 }
 function showLang() {
-    $('<a href="https://www.waze.com/editor/#reset-WME-prefered-language">(' + language.toUpperCase() + ')</a>').insertAfter(".profile-link");
+    if($(".user-name")) {
+        $('<a href="https://www.waze.com/editor/#reset-WME-prefered-language">(' + language.toUpperCase() + ')</a>').appendTo(".user-name");
+    } else {
+        setTimeout(showLang, 500);
+    }
 };
-setTimeout(showLang, 5000);
-if (location.pathname.indexOf("/" + language + "/editor") !== 0 && location.pathname.indexOf("/user/editor") == -1 && location.pathname.indexOf("beta") === 0) {
+setTimeout(showLang, 500);
+if ((location.pathname.indexOf("/" + language + "/editor") !== 0 && location.pathname.indexOf("beta") === 0) && location.pathname.indexOf("/user/editor") == -1 && location.pathname.indexOf("beta") === 0) {
   setTimeout(function() {
       var fullpath = window.location.pathname+window.location.search;
       while(fullpath.substring(1,7) != "editor")
       {
           fullpath = fullpath.substring(1);
       }
-      localStorage.setItem('WME-prefered-language-last-refresh',ts);
+      //localStorage.setItem('WME-prefered-language-last-refresh',ts);
       if(!$(".recaptcha-container")[0])
       {
-          window.location.replace = window.location.replace('https://www.waze.com/' + language + fullpath);
+          window.location.replace = window.location.replace('https://beta.waze.com/' + language + fullpath);
       }
   }, 1000);
 }
